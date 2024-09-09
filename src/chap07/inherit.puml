@@ -1,0 +1,15 @@
+@startuml
+
+class Animal {
+    String name
+    void setName()
+    void sleep()
+}
+
+class Tiger extends Animal
+
+class Dog extends Animal {
+    void sleep(int times)
+}
+
+@enduml

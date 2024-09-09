@@ -1,0 +1,20 @@
+@startuml
+
+abstract class Employee {
+    String name
+    double calculateSalary()
+}
+
+class FullTimeEmployee extends Employee {
+    double salary
+    double calculateSalary()
+}
+class PartTimeEmployee extends Employee {
+    double hourlyRate
+    int hoursWorked
+    double calculateSalary()
+}
+
+
+
+@enduml
