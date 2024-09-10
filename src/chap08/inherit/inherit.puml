@@ -1,0 +1,7 @@
+@startuml
+interface InterfaceA
+interface InterfaceB
+interface InterfaceC extends InterfaceA, InterfaceB
+class ImplementsC implements InterfaceC
+
+@enduml

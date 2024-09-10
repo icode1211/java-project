@@ -1,0 +1,11 @@
+@startuml
+
+class Tiger
+class Lion
+
+class Zookeeper {
+    void feed(Tiger tiger)
+    void feed(Lion lion)
+}
+
+@enduml

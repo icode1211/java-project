@@ -1,0 +1,11 @@
+@startuml
+
+interface Predator
+class Tiger implements Predator
+class Lion implements Predator
+
+class Zookeeper {
+    void feed(Predator predator)
+}
+
+@enduml

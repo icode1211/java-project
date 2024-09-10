@@ -1,0 +1,17 @@
+@startuml
+
+interface Predator {
+    String getFood()
+}
+class Tiger implements Predator {
+    String getFood()
+}
+class Lion implements Predator {
+    String getFood()
+}
+
+class Zookeeper {
+    void feed(Predator predator)
+}
+
+@enduml

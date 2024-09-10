@@ -1,0 +1,19 @@
+@startuml
+
+interface Payment {
+    void processPayment(double amount)
+}
+
+class CreditCard implements Payment {
+    String cardNumber
+    CreditCard(String cardNumber)
+    void processPayment(double amount)
+}
+
+class Paypal implements Payment {
+    String email
+    Paypal(String email)
+    void processPayment(double amount)
+}
+
+@enduml
