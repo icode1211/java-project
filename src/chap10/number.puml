@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/class-diagram
+abstract class Number
+class Integer extends Number
+class Byte extends Number
+class Double extends Number
+class Float extends Number
+class BigDecimal extends Number
+@enduml
