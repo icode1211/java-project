@@ -11,7 +11,13 @@ public class WildCardExample {
         System.out.println(t.getName() + ": " + Arrays.toString(t.getStudents()));
     }
 
-    public static void registerPerson2(Course<? extends Student> t) {
+//    public static void registerPerson2(Course<? extends Student> t) {
+//        System.out.println(t.getName() + ": " + Arrays.toString(t.getStudents()));
+//    }
+
+    // 와일드카드 타입(?) 대신에 타입파라미터(T) 지정 가능
+    // 위에서 정의한 registerPerson2와 동일한 동작.
+    public static <T extends Student> void registerPerson2(Course<T> t) {
         System.out.println(t.getName() + ": " + Arrays.toString(t.getStudents()));
     }
 
